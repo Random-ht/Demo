@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+
+    }
+    defaultConfig {
+        applicationId "com.example.random"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile 'com.android.support:appcompat-v7:25.3.1'
+
+
+
+    compile 'com.android.support:design:25.3.1'
+    testCompile 'junit:junit:4.12'
+
+    //RxJava和Retrofit的依赖
+    compile 'io.reactivex:rxjava:x.y.z'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.alibaba:fastjson:1.2.4'
+
+    //一个工具类
+    compile 'com.github.vondear:RxTools:v1.7.6'
+
+    //欢迎界面动画 的依赖
+    compile 'com.jaredrummler:animated-svg-view:1.0.4'
+    //文字动画的依赖
+    compile 'yasic.library.ParticleTextView:particletextview:0.0.3'
+
+    //butterKnife依赖
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+
+    //沉浸式
+    compile 'com.gyf.barlibrary:barlibrary:2.3.0'
+    //标签
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+    //刷新列表的控件
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-alpha-12'
+    //错误日志依赖
+    compile 'com.blankj:utilcode:1.8.1'
+
+    //EventBus  数据传递
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+}
+
+

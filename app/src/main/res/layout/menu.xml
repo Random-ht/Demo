@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#2d9fe1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/one"
+        style="@style/test_text"
+        android:text="第一条" />
+
+    <TextView
+        android:id="@+id/two"
+        style="@style/test_text"
+        android:text="第二条" />
+
+    <TextView
+        android:id="@+id/three"
+        style="@style/test_text"
+        android:text="第三条" />
+
+    <TextView
+        android:id="@+id/four"
+        style="@style/test_text"
+        android:text="第四条" />
+
+    <TextView
+        android:id="@+id/five"
+        style="@style/test_text"
+        android:text="第五条" />
+
+</LinearLayout>

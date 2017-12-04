@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/radioGroup"
+        android:background="#8000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/home_layout"
+            style="@style/layout">
+
+            <TextView
+                android:id="@+id/home_text"
+                style="@style/textView"
+                android:drawableTop="@mipmap/home_normal"
+                android:text="首页" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/more_layout"
+            style="@style/layout">
+
+            <TextView
+                android:id="@+id/more_text"
+                style="@style/textView"
+                android:drawableTop="@mipmap/more_normal"
+                android:text="更多" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/me_layout"
+            style="@style/layout">
+
+            <TextView
+                android:id="@+id/me_text"
+                style="@style/textView"
+                android:drawableTop="@mipmap/me_normal"
+                android:text="我的" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

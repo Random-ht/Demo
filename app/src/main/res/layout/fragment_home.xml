@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/tabLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:tabIndicatorColor="@color/blue"-->
+    <!--app:tabIndicatorHeight="0dp"-->
+    <!--app:tabSelectedTextColor="#FFF"-->
+    <!--app:tabTextColor="@color/blue" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/tabLayout"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:overScrollMode="never" />
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/tabLayout"
+            android:layout_centerVertical="true"
+            android:background="#FFF"
+            android:src="@mipmap/add" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000" />
+
+    <com.example.random.customView.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:overScrollMode="never" />
+
+</LinearLayout>

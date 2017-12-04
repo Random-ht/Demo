@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/more_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="更多相关信息"
+        android:textColor="#000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3000" />
+
+    <TextView
+        android:id="@+id/auto_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="自动滚动列表"
+        android:textColor="#000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3000" />
+
+    <TextView
+        android:id="@+id/home_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="首页样式"
+        android:textColor="#000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3000" />
+
+    <TextView
+        android:id="@+id/recyclerView_add_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="RecyclerView添加头尾布局"
+        android:textColor="#000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3000" />
+
+    <TextView
+        android:id="@+id/recyclerView_and_home_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="RecyclerView添加头+首页样式"
+        android:textColor="#000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3000" />
+
+    <TextView
+        android:id="@+id/tiger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="老虎机"
+        android:textColor="#000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3000" />
+
+
+</LinearLayout>
